@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <header>
+            <a href="#" class="logo">Nekomimi research</a>
+            <div class="toggle"></div>
+        </header>
+        <img src="./images/background.webp" class="bg">
+        <img src="./images/catgirl.png" class="cat">
+        <div class="content">
+            <h2>Join nekomimi research<br><span>Today</span></h2>
+            <p>With every person contributing, we are getting closer and closer to our dreamed goal.<br>If you always wanted to have your own Catboy or Catgirl then suport us and we will reach your dream.</p>
+            <a href="#">Suport us</a>
+        </div>
+        <div class="textBlocks">
+            <div class="block">
+                <h3>Our goals</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et tincidunt orci, sit amet ultrices nisi. Maecenas lobortis congue feugiat. Ut mauris libero, elementum et gravida sed, ultricies sit amet est. Duis vehicula varius dapibus. Suspendisse potenti. Cras laoreet non orci vitae interdum.</p>
+            </div>
+            <div class="block">
+                <h3>Genetic modification</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et tincidunt orci, sit amet ultrices nisi. Maecenas lobortis congue feugiat. Ut mauris libero, elementum et gravida sed, ultricies sit amet est. Duis vehicula varius dapibus. Suspendisse potenti. Cras laoreet non orci vitae interdum.</p>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        document.addEventListener("mousemove", function(e){
+            const bg = document.querySelector(".bg");
+            const cat = document.querySelector(".cat");
+            const content = document.querySelector(".content");
+
+            bg.style.width = 100 + e.pageX/100 + '%';
+            bg.style.height = 100 + e.pageX/100 + '%';
+
+            cat.style.right = 100 + e.pageX/2 + 'px';
+
+            content.style.left = 100 + e.pageX/2 + 'px';
+        })
+    </script>
+</body>
+</html>
